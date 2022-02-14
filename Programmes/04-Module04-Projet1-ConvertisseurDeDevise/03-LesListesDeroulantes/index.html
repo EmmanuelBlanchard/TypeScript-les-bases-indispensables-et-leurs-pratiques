@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label>Montant : </label>
+            <input type="number" id="amount" />
+        </div>
+        <div>
+            <label>Devise :</label>
+            <select id="initialCurrency">
+                {# <option value="Dollar">Dollar - ($)</option>
+                <option value="Euro">Euro - (€)</option>
+                <option value="PoundSterling">Livre sterling - (£)</option>
+                <option value="Yen">Yen - (¥)</option>
+                <option value="Yuan">Yuan renminbi - (元)</option>
+                <option value="Bitcoin"> Bitcoin - (₿)</option> #}
+            </select>
+        </div>
+        <div>
+            <label>Devise à convertir :</label>
+            <select id="finalCurrency">
+                {# <option value="Dollar">Dollar - ($)</option>
+                <option value="Euro" selected>Euro - (€)</option>
+                <option value="PoundSterling">Livre sterling - (£)</option>
+                <option value="Yen">Yen - (¥)</option>
+                <option value="Yuan">Yuan renminbi - (¥)</option>
+                <option value="Bitcoin"> Bitcoin - (₿)</option> #}
+            </select>
+        </div>
+    </form>
+    <div id="result">Résultat : 0.88452 </div>
+    <script src="dist/main.js"></script>
+</body>
+</html>
